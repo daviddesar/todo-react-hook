@@ -1,0 +1,88 @@
+@import "../../sass/variables";
+@import "../../sass/mixin";
+@import "../../sass/base";
+@import "../../sass/utili";
+
+.form-todo {
+  // margin-top: 3rem;
+  @include respond(phone) {
+    display: block;
+  }
+  @include respond(tab-port) {
+    display: block;
+  }
+  @include respond(tab-land) {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+  }
+  &__input {
+    border: none;
+    border-bottom: 1.5px solid $color-green-primary;
+    width: 30rem;
+    padding: 0.6rem 1.3rem;
+    margin-right: 2rem;
+    font-size: 1.7rem;
+    font-family: inherit;
+    font-weight: 400;
+    color: #666;
+    &:focus {
+      outline: none;
+    }
+    @include respond(phone) {
+      width: 70%;
+      padding: 0.3rem 0.7rem;
+      display: block;
+      margin: 1rem auto;
+      font-size: 1.2rem;
+    }
+    @include respond(tab-port) {
+      width: 80%;
+      display: block;
+      margin: 1rem auto;
+    }
+    @include respond(tab-land) {
+      width: 70%;
+    }
+    @include respond(big-desktop) {
+      width: 80%;
+    }
+  }
+  .btn--green {
+    padding: 0.9rem 1.5rem;
+    background-color: transparent;
+    border: 1.5px solid $color-green-primary;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: $color-green-primary;
+    font-family: inherit;
+    transition: all 0.3s;
+    &:hover {
+      background-color: $color-green-primary;
+      color: white;
+    }
+    &:focus {
+      outline: none;
+    }
+    @include respond(phone) {
+      display: block;
+      margin: 0 auto;
+      padding: 0.5rem 1rem;
+      font-size: 1.2rem;
+      border-radius: 3px;
+    }
+    @include respond(tab-port) {
+      display: block;
+      margin: 0 auto;
+      padding: 0.6rem 1.8rem;
+      border-radius: 3px;
+    }
+    @include respond(tab-land) {
+      display: block;
+      margin: 0 auto;
+      padding: 0.5rem 2rem;
+    }
+  }
+}

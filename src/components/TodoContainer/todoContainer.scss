@@ -1,0 +1,20 @@
+@import "../../sass/variables";
+@import "../../sass/mixin";
+@import "../../sass/base";
+@import "../../sass/utili";
+
+.todo-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.placeholder-todo {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  @include respond(phone) {
+    font-size: 1.3rem;
+  }
+  @include respond(tab-land) {
+    font-size: 2rem;
+  }
+}

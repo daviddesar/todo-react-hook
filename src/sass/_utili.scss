@@ -1,0 +1,28 @@
+@import "./mixin";
+.m-bottom-large {
+  margin-bottom: 5rem !important;
+  @include respond(phone) {
+    margin-bottom: 3rem !important;
+  }
+}
+.m-bottom-med {
+  margin-bottom: 3rem !important;
+  @include respond(phone) {
+    margin-bottom: 2rem !important;
+  }
+}
+.m-bottom-small {
+  margin-bottom: 1rem !important;
+}
+.m-top-large {
+  margin-top: 5rem !important;
+  @include respond(phone) {
+    margin-top: 3rem !important;
+  }
+}
+.m-top-med {
+  margin-top: 3rem !important;
+}
+.m-top-small {
+  margin-top: 1rem !important;
+}

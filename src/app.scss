@@ -1,0 +1,7 @@
+@import './sass/variables';
+@import './sass/base';
+.todo {
+    background-color: $color-grey-1;
+    min-height: 100vh;
+    padding: 3rem 0;
+}
